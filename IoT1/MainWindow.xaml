@@ -7,57 +7,65 @@
         xmlns:local="clr-namespace:IoT1"
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="800"
+        
        >
 
     <Grid>
-        <Border CornerRadius="30">
+        <Border CornerRadius="50" BorderThickness="5">
 
         </Border>
         <Grid Background="Azure">
             <StackPanel Background="White"
-                        Width="124" 
+                        Width="150" 
                         Orientation="Vertical"
                         HorizontalAlignment="Left">
 
-                <Menu Height="400" >
+                <Menu Height="400">
                     <Menu.ItemsPanel>
                         <ItemsPanelTemplate>
                             <VirtualizingStackPanel Orientation="Vertical"/>
                         </ItemsPanelTemplate>
                     </Menu.ItemsPanel>
-                    <MenuItem Header="Home" >
-                        
-
-                      
-
-                    </MenuItem>
-                    <MenuItem Header="Users" >
-                        
-                        
-                    </MenuItem>
-                    <MenuItem Header="Stations">
+                    <MenuItem Header="Home" Height="50">
+                        <MenuItem.Icon>
+                            <Image Source="/Assets/home.png" Stretch="UniformToFill"/>
+                        </MenuItem.Icon>
 
                     </MenuItem>
-
-                    <MenuItem Header="Settings">
-                        
+                    <MenuItem Header="Users" Height="50" >
+                        <MenuItem.Icon>
+                            <Image Source="/Assets/users.png" Stretch="UniformToFill"/>
+                        </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem Header="Log Out" >
-                        
+
+                    <MenuItem Header="Stations" Height="50">
+                        <MenuItem.Icon>
+                            <Image Source="/Assets/stations.png" Stretch="UniformToFill"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="Settings" Height="50">
+                        <MenuItem.Icon>
+                            <Image Source="/Assets/settings.png" Stretch="UniformToFill"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Log In" Height="50" >
+                        <MenuItem.Icon>
+                            <Image Source="/Assets/account.png" Stretch="UniformToFill"/>
+                        </MenuItem.Icon>
+
                     </MenuItem>
                 </Menu>
 
             </StackPanel>
-            <TextBox HorizontalAlignment="Left" Margin="452,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Height="27"/>
-            <Label Content="Heart Rate"  FontSize="15" HorizontalAlignment="Left" Margin="285,47,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.116,-0.142" Height="27" Width="85"/>
-            <Label Content="Oxygen Levels" FontSize="15" HorizontalAlignment="Left" Margin="285,79,0,0" VerticalAlignment="Top" Width="104"/>
-            <TextBox HorizontalAlignment="Left" Margin="452,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Height="27"/>
-            <Label Content="Environmental Temp" FontSize="15" HorizontalAlignment="Left" Margin="285,126,0,0" VerticalAlignment="Top" Width="147"/>
-            <Label Content="CO Levels" FontSize="15" HorizontalAlignment="Left" Margin="285,171,0,0" VerticalAlignment="Top" Width="130"/>
-            <TextBox HorizontalAlignment="Left" Margin="452,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Height="27"/>
-            <TextBox HorizontalAlignment="Left" Margin="452,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Height="27"/>
-            <Label Content="Geo Location" FontSize="15" HorizontalAlignment="Left" Margin="285,230,0,0" VerticalAlignment="Top" Width="130"/>
-            <TextBox HorizontalAlignment="Left" Margin="452,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Height="27"/>
+            <TextBox HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="20"/>
+            <Label Content="Heart Rate"  FontSize="15" HorizontalAlignment="Left" Margin="170,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.116,-0.142" Height="27" Width="85"/>
+            <Label Content="Oxygen Levels" FontSize="15" HorizontalAlignment="Left" Margin="170,75,0,0" VerticalAlignment="Top" Width="104"/>
+            <TextBox HorizontalAlignment="Center" Margin="0,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="21"/>
+            <Label Content="Environmental Temp" FontSize="15" HorizontalAlignment="Left" Margin="168,113,0,0" VerticalAlignment="Top" Width="146"/>
+            <Label Content="CO Levels" FontSize="15" HorizontalAlignment="Left" Margin="170,154,0,0" VerticalAlignment="Top" Width="130"/>
+            <TextBox HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="19"/>
+            <TextBox HorizontalAlignment="Center" Margin="0,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="21"/>
 
 
 

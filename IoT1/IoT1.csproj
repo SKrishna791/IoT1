@@ -102,8 +102,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
     <Folder Include="Fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\stations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\account.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
