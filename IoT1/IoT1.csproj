@@ -119,5 +119,11 @@
   <ItemGroup>
     <Resource Include="Assets\account.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GrpcClient\GrpcClient.csproj">
+      <Project>{a34c6512-2f18-42d7-a2dd-4c1ed61aa6f9}</Project>
+      <Name>GrpcClient</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -43,16 +43,12 @@ namespace GrpcClient
             return result;
         }
 
-        public List<string> GetListOfDevices()
+        public List<Device> GetListOfDevices()
         {
-            List<string> devices = new List<string>();
+            
+            var response = client.ListDevices(new Empty());
 
-            var t = Task.Run(async () =>
-            {
-
-            });
-
-            t.Wait();
+            return response.Device.ToList();
         }
     }
     //class Program
@@ -66,7 +62,8 @@ namespace GrpcClient
 
     //        Console.WriteLine("Result from server: {0}", x);
 
-            
+    //        var y = client.GetListOfDevices();
+
     //        Console.ReadKey();
     //    }
     //}

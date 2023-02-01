@@ -28,6 +28,7 @@ namespace IoT1
             Client _client = new Client("127.0.0.1:50051");
             string result= _client.GetServerId();
 
+            _client.GetListOfDevices();
 
                 InitializeComponent();
             
