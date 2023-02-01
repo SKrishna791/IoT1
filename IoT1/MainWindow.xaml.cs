@@ -22,16 +22,24 @@ namespace IoT1
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        Client client;
         public MainWindow()
         {
-            Client _client = new Client("127.0.0.1:50051");
-            string result= _client.GetServerId();
+           //Client _client = new Client(""); 
+           // string result= _client.GetServerId();
+            
 
-            _client.GetListOfDevices();
+           // _client.GetListOfDevices();
 
                 InitializeComponent();
             
+        }
+
+        private void Connect_Click(object sender, RoutedEventArgs e)
+        {
+            client= new Client(""); //Add address
+            string result = client.GetServerId();
+            Test1.Text = result;
         }
     }
 }
