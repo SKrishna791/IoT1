@@ -42,6 +42,18 @@ namespace GrpcClient
             t.Wait();
             return result;
         }
+
+        public List<string> GetListOfDevices()
+        {
+            List<string> devices = new List<string>();
+
+            var t = Task.Run(async () =>
+            {
+
+            });
+
+            t.Wait();
+        }
     }
     //class Program
     //{
