@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GrpcClient;
 
 namespace IoT1
 {
@@ -21,9 +22,15 @@ namespace IoT1
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
-            InitializeComponent();
+            Client _client = new Client("127.0.0.1:50051");
+            string result= _client.GetServerId();
+
+
+                InitializeComponent();
+            
         }
     }
 }
