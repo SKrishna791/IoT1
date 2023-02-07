@@ -57,14 +57,14 @@
                 </Menu>
 
             </StackPanel>
-            <TextBox x:Name="heart_rate" HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="20"/>
+            <TextBox x:Name="heart_rate" HorizontalAlignment="Left" Margin="322,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="20"/>
             <Label Content="Heart Rate"  FontSize="15" HorizontalAlignment="Left" Margin="170,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.116,-0.142" Height="27" Width="85"/>
             <Label Content="Oxygen Levels" FontSize="15" HorizontalAlignment="Left" Margin="170,75,0,0" VerticalAlignment="Top" Width="104"/>
-            <TextBox x:Name="oxygen" HorizontalAlignment="Center" Margin="0,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="21"/>
+            <TextBox x:Name="oxygen" HorizontalAlignment="Left" Margin="322,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="21"/>
             <Label Content="Environmental Temp" FontSize="15" HorizontalAlignment="Left" Margin="168,113,0,0" VerticalAlignment="Top" Width="146"/>
             <Label Content="CO Levels" FontSize="15" HorizontalAlignment="Left" Margin="170,154,0,0" VerticalAlignment="Top" Width="130"/>
-            <TextBox x:Name="co_2" HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="19"/>
-            <TextBox x:Name="temp" HorizontalAlignment="Center" Margin="0,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="21"/>
+            <TextBox x:Name="co_2" HorizontalAlignment="Left" Margin="322,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="19"/>
+            <TextBox x:Name="temp" HorizontalAlignment="Left" Margin="322,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="21"/>
             <Button x:Name="Connect" Content="Connect" HorizontalAlignment="Left" Margin="645,251,0,0" VerticalAlignment="Top" Click="Connect_Click"/>
 
 
@@ -72,13 +72,18 @@
             <TextBox x:Name="endpoint_addr" HorizontalAlignment="Left" Height="23" Margin="520,250,0,0" TextWrapping="Wrap" Text="192.168.2.156" VerticalAlignment="Top" Width="120" />
             <Label x:Name="endpoint_conn_status" Content="" HorizontalAlignment="Left" Margin="520,219,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.232,0.559"/>
             <Button x:Name="StartBtn" Click="StartBtn_Click" Content="Start" HorizontalAlignment="Left" Margin="619,289,0,0" VerticalAlignment="Top" Width="75"/>
-            
-            
-            <Ellipse x:Name="heart_rate_st" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="481,28,0,0" VerticalAlignment="Top" Width="15"/>
-            <Ellipse x:Name="oxygen_st" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="481,72,0,0" VerticalAlignment="Top" Width="15"/>
-            <Ellipse x:Name="temp_st" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="481,117,0,0" VerticalAlignment="Top" Width="15"/>
-            <Ellipse x:Name="co_2_st" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="481,160,0,0" VerticalAlignment="Top" Width="15"/>
+
+
+            <Ellipse x:Name="heart_rate_st" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="16" Margin="492,33,0,0" VerticalAlignment="Top" Width="16"/>
+            <Ellipse x:Name="oxygen_st" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="494,77,0,0" VerticalAlignment="Top" Width="14"/>
+            <Ellipse x:Name="temp_st" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="494,117,0,0" VerticalAlignment="Top" Width="16"/>
+            <Ellipse x:Name="co_2_st" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="495,161,0,0" VerticalAlignment="Top" Width="15"/>
             <Button x:Name="StopBtn" Click="StopBtn_Click" Content="Stop" IsEnabled="False" HorizontalAlignment="Left" Margin="520,289,0,0" VerticalAlignment="Top" Width="75"/>
+            
+            <Label Content="bpm" HorizontalAlignment="Left" Margin="454,27,0,0" VerticalAlignment="Top"/>
+            <Label Content="%" HorizontalAlignment="Left" Margin="457,72,0,0" VerticalAlignment="Top"/>
+            <Label Content="F" HorizontalAlignment="Left" Margin="459,112,0,0" VerticalAlignment="Top"/>
+            <Label Content="ppm" HorizontalAlignment="Left" Margin="454,161,0,0" VerticalAlignment="Top"/>
 
 
 
